@@ -26,6 +26,7 @@ A glimpse grade distribution(Temporarily closed source due to privacy concerns):
 
 ## Future Updates
 
+- Curve for each course
 - Potential replacement or modification of the FusionCharts component.
 
 ## Acknowledgments
