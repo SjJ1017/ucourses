@@ -15,6 +15,12 @@ This repository hosts a web tool for analyzing the average grades of 2021 UCAS (
 - **Filter Courses:** Enter the course name in the search box to filter the courses.
 - **View Data:** The courses will be listed along with their average grades, sorted from highest to lowest.
 
+## Grade Analysis Image Gallery
+
+Here is an example of grade distribution for a course:
+
+![Grade Distribution Example](GPA.png "Grade Distribution Example")
+
 ## Future Updates
 
 - Potential replacement or modification of the FusionCharts component.
