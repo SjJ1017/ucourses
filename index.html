@@ -9,17 +9,17 @@
 <script type="text/javascript" src="fils/js/themes/fusioncharts.theme.umber.js"></script>
 <style>
   #filterInput {
-    width: 50%; /* 输入框宽度 */
-    padding: 10px; /* 内填充，使输入框更大 */
-    margin: 20px auto; /* 上下外边距20px，左右自动（居中） */
-    display: block; /* 使margin:auto生效，进行居中 */
-    font-size: 16px; /* 字体大小 */
-    border: 1px solid #ccc; /* 边框颜色 */
-    border-radius: 5px; /* 边框圆角 */
+    width: 50%; 
+    padding: 10px; 
+    margin: 20px auto; 
+    display: block; 
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
   }
 
   #chart-container {
-    margin-top: 20px; /* 图表与输入框之间的间距 */
+    margin-top: 20px; 
   }
 </style>
 <script type="text/javascript">
@@ -41,23 +41,41 @@ const dataSource = {
 function filterChart() {
   var filterValue = document.getElementById('filterInput').value.toLowerCase();
 
-  // Filter the data based on the label
-  var filteredData = dataSource.data.filter(function(dataItem) {
-    return dataItem.label.toLowerCase().includes(filterValue);
+// Split the filterValue by '/' and remove any empty strings
+var filterValues = filterValue.split('/').filter(Boolean);
+
+// Separate the filter values into include and exclude lists
+var includeFilters = filterValues.filter(val => !val.startsWith('-'));
+var excludeFilters = filterValues.filter(val => val.startsWith('-')).map(val => val.slice(1));
+
+// Filter the data based on the include and exclude criteria
+var filteredData = dataSource.data.filter(function(dataItem) {
+  // Check if the data item should be included
+  var include = includeFilters.length === 0 || includeFilters.some(function(filter) {
+    return dataItem.label.toLowerCase().includes(filter.trim());
   });
 
+  // Check if the data item should be excluded
+  var exclude = excludeFilters.some(function(filter) {
+    return dataItem.label.toLowerCase().includes(filter.trim());
+  });
+
+  // Include the data item only if it should be included and not excluded
+  return include && !exclude;
+});
+
   // Base height per data point
-  var baseHeightPerDataPoint = 30; // 可以根据需要调整这个值
+  var baseHeightPerDataPoint = 30;
 
   // Calculate the total height based on the number of data points
-  var totalHeight = Math.max(filteredData.length * baseHeightPerDataPoint, 300); // 设置一个最小高度值，例如300
+  var totalHeight = Math.max(filteredData.length * baseHeightPerDataPoint, 300); 
 
   // Update the chart with the filtered data
   var myChart = new FusionCharts({
     type: "bar2d",
     renderAt: "container",
     width: "100%",
-    height: totalHeight.toString(), // 转换为字符串
+    height: totalHeight.toString(), 
     dataFormat: "json",
     dataSource: {
       chart: dataSource.chart,
