@@ -5,6 +5,8 @@ webpage: [2021 UCAS Grades](https://sjj1017.github.io/ucourses/)
 
 This repository hosts a web tool for analyzing the average grades of 2021 UCAS (University of Chinese Academy of Sciences) undergraduates across various courses. Users can filter courses by name and view average grades sorted from high to low.
 
+Data from all the courses taken by UCAS undergraduate students enrolled in 2021 in the past 5 semesters. (temporarily no P/NP,letter graded courses)
+
 ## Features
 
 - **Grade Sorting:** View courses with their average grades sorted from high to low.
@@ -28,7 +30,8 @@ A glimpse grade distribution(Temporarily closed source due to privacy concerns):
 ![Region70](region_median.png "Region 70%rank GPA distribution")
 
 ## Future Updates
-
+- P/NP and letter graded courses soon included
+- Photos in Los Angeles :)
 - Curve for each course
 - Potential replacement or modification of the FusionCharts component.
 
