@@ -19,7 +19,9 @@ This repository hosts a web tool for analyzing the average grades of 2021 UCAS (
 
 Here is an example of grade distribution for a course:
 
-![Grade Distribution Example](GPA.png "Grade Distribution Example")
+![GPA Major distribution](GPA.png "GPA Major distribution")
+![Region_Avg](region_avg.png "Region avg GPA distribution")
+![Region70](region_median.png "Region 70%rank GPA distribution")
 
 ## Future Updates
 
