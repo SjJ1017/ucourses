@@ -17,7 +17,7 @@ This repository hosts a web tool for analyzing the average grades of 2021 UCAS (
 
 ## Grade Analysis Image Gallery
 
-A glimpse grade distribution:
+A glimpse grade distribution(Temporarily closed source due to privacy concerns):
 
 ![GPA Major distribution](GPA.png "GPA Major distribution")
 ![Region_Avg](region_avg.png "Region avg GPA distribution")
