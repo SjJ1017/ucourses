@@ -10,11 +10,11 @@ This repository hosts a web tool for analyzing the average grades of 2021 UCAS (
 - **Grade Sorting:** View courses with their average grades sorted from high to low.
 - **Text-based Filtering:** Filter courses by entering text to find specific subjects.
 - **Visualization:** Currently uses FusionCharts for data visualization, with plans to modify or replace this in the future.
-- ***Clarification:*** name of course: COURSE_NAME@{units}{e/r}, where e=[elective courses], r= [required courses]
+- ***Clarification:** name of course: COURSE_NAME@{units}{e/r}, where e=[elective courses], r= [required courses]*
 
 ## Usage
 
-- **Filter Courses:** Enter the course name in the search box to filter the courses.
+- **Filter Courses:** Enter the course name in the search box to filter the courses. Please use '/' to seperate querys and '-' to exclude. (e.g. 线性代数I/微积分I/-II)
 - **View Data:** The courses will be listed along with their average grades, sorted from highest to lowest.
 
 ## Grade Analysis Image Gallery
