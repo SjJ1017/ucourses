@@ -30,5 +30,8 @@ A glimpse grade distribution(Temporarily closed source due to privacy concerns):
 - Curve for each course
 - Potential replacement or modification of the FusionCharts component.
 
+## Privacy Statement:
+In the data acquisition process, the data has been anonymized, and only the profession, course name, course information, and grades are recorded.
+
 ## Acknowledgments
 - Appreciation to FusionCharts for providing the powerful charting library used in this project.
