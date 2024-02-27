@@ -48,34 +48,37 @@ function calculateGradeDistribution(grades) {
   return distribution;
 }
 
-function curve(courseName) {
-  const grades = courseData[courseName];
+function curve(coursename) {
+  const grades = courseData[coursename];
 
-  if (!grades) {
-    console.error('No data found for course:', courseName);
-    return;
+  const data = [];
+  for (let i = 0; i <= 100; i += 5) {
+    data.push({
+      label: `${i}-${i+4}`,
+      value: 0
+    });
   }
 
-  const gradeDistribution = calculateGradeDistribution(grades);
-  const dataPoints = Object.keys(gradeDistribution).map(score => ({
-    label: score.toString(),
-    value: gradeDistribution[score].toString()
-  }));
+  grades.forEach(grade => {
+    const index = Math.floor(grade / 5);
+    if (index < data.length) {
+      data[index].value += 1;
+    }
+  });
 
   const dataSource = {
     chart: {
-      caption: `Curve of course: ${courseName}`,
+      caption: `Curve for course: ${coursename}`,
       yaxisname: "Number of Students",
       anchorradius: "5",
-      plottooltext: "Number of people who get $label is <b>$value</b>",
+      plottooltext: "Number of students in range $label is <b>$dataValue</b>",
       showhovereffect: "1",
       showvalues: "0",
-      numbersuffix: "",
       theme: "candy",
       anchorbgcolor: "#72D7B2",
       palettecolors: "#72D7B2"
     },
-    data: dataPoints
+    data: data
   };
 
   FusionCharts.ready(function() {
