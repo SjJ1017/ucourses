@@ -11,6 +11,7 @@ Data from all the courses taken by UCAS undergraduate students enrolled in 2021 
 
 - **Grade Sorting:** View courses with their average grades sorted from high to low.
 - **Text-based Filtering:** Filter courses by entering text to find specific subjects.
+- **Curves:** Curve of the course available to check
 - **Visualization:** Currently uses FusionCharts for data visualization, with plans to modify or replace this in the future.
 - ***Clarification1:** name of course: COURSE_NAME@{units}{e/r}, where e=[elective courses], r= [required courses]*
 - ***Clarification2:** Unable to get more details except for name, units and e/r, there might be a bunch of courses by different professor/ offered by different institutions put together, which might lead to bias*
@@ -20,7 +21,7 @@ Data from all the courses taken by UCAS undergraduate students enrolled in 2021 
 
 - **Filter Courses:** Enter the course name in the search box to filter the courses. Please use '/' to seperate querys and '-' to exclude. (e.g. 线性代数I/微积分I/-II)
 - **View Data:** The courses will be listed along with their average grades, sorted from highest to lowest.
-
+- **Curves:** Click bar to see the curve of the course
 ## Grade Analysis Image Gallery
 
 A glimpse grade distribution(Temporarily closed source due to privacy concerns):
@@ -32,7 +33,6 @@ A glimpse grade distribution(Temporarily closed source due to privacy concerns):
 ## Future Updates
 - P/NP and letter graded courses soon included
 - Photos in Los Angeles :)
-- Curve for each course
 - Potential replacement or modification of the FusionCharts component.
 
 ## Privacy Statement:
