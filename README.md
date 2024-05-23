@@ -30,6 +30,16 @@ A glimpse grade distribution(Temporarily closed source due to privacy concerns):
 ![Region_Avg](region_avg.png "Region avg GPA distribution")
 ![Region70](region_median.png "Region 70%rank GPA distribution")
 
+## Bonus
+Los Angeles, the city of STAR((what do i MEAN?)s! 
+![french_street](https://github.com/SjJ1017/ucourses/assets/100460031/919bc794-0729-4e36-b414-a7cf11ecb966)
+![griffith_observatory](https://github.com/SjJ1017/ucourses/assets/100460031/f5a470b6-f56d-4cf5-b2da-5d9ca6b8c1e5)
+![universal_CA](https://github.com/SjJ1017/ucourses/assets/100460031/38b929c8-0736-46dd-a364-25b24ffd3445)
+![nintendo_world](https://github.com/SjJ1017/ucourses/assets/100460031/fdc9b92a-b092-4042-90dd-970e297aae28)
+![LA_style](https://github.com/SjJ1017/ucourses/assets/100460031/9bf4d895-d7e7-4d3e-84d4-8c6a1430474d)
+
+
+
 ## Future Updates
 - P/NP and letter graded courses soon included
 - Photos in Los Angeles :)
