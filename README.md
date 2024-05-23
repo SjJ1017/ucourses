@@ -32,6 +32,7 @@ A glimpse grade distribution(Temporarily closed source due to privacy concerns):
 
 ## Bonus
 Los Angeles, the city of STAR(what do i MEAN?)s! 
+
 ![french_street](https://github.com/SjJ1017/ucourses/assets/100460031/919bc794-0729-4e36-b414-a7cf11ecb966)
 ![griffith_observatory](https://github.com/SjJ1017/ucourses/assets/100460031/f5a470b6-f56d-4cf5-b2da-5d9ca6b8c1e5)
 ![universal_CA](https://github.com/SjJ1017/ucourses/assets/100460031/38b929c8-0736-46dd-a364-25b24ffd3445)
@@ -40,7 +41,6 @@ Los Angeles, the city of STAR(what do i MEAN?)s!
 
 ## Future Updates
 - P/NP and letter graded courses soon included
-- Photos in Los Angeles :)
 - Potential replacement or modification of the FusionCharts component.
 
 ## Privacy Statement:
